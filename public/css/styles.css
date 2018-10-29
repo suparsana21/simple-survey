@@ -48,6 +48,7 @@ lable{
 .header {
 	height: 100px;
 	width:100%;
+	overflow: hidden;
 }
 .header h2 {
 	top: 10px;
