@@ -27,8 +27,6 @@
 <body>
 
 
-
-
 <div class="intro">
 <h2>Welcome to the Performance engineering survey</h2>
 
@@ -40,8 +38,18 @@ There is more to performance engineering than just testing. Done right, performa
 </div>
 
 <div>
-<center>
-    
+  <form> <!-- Need to at action and method attributes when database is name -->
+    Username: 
+    <input type = "text" name = "username" required> <br>
+    Email:
+    <input type = "email" name = "email" required > <br>
+    Organization:
+    <input type = "text" name ="organization" required> <br>
+    Mobile Number (optional)
+    <input type = "tel" name = "mobile"> <br>
+    <button type = "button" value ="Submit">Save</button>
+  </form>
+<center>  
 	<a href="./FirstPage.html">Take the Survey</a> || 
 	<a href="./privacy.html">Read the Privacy Statement</a>
 	</center>
