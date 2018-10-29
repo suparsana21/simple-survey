@@ -1,1 +1,1 @@
-# push_demo
+# Simple Survey application 
