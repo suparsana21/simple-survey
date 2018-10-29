@@ -1,15 +1,16 @@
 <html>
+
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="./css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="public/css/styles.css">
 </head>
 
 <body>
 
-<div class="danger">
-  <strong>
-  </strong>
-</div>
+  <div class="danger">
+    <strong>
+    </strong>
+  </div>
 
 
   <!-- scripts -->
@@ -18,7 +19,7 @@
       // document.getElementById("demo").innerHTML = "Hello World";
 
 
-       window.location.href="/nextPage" ;
+      window.location.href = "/nextPage";
     }
 
     var expanded = false;
@@ -39,7 +40,7 @@
 
   <div class="header">
     <div class="left">
-      <img src="./image.jpg" alt="logo" />
+      <img src="/public/image.jpg" alt="logo" />
     </div>
     <div class="right_txt">
       PwC Survey
@@ -49,49 +50,49 @@
   </div>
 
   <div class="center back-color">
-    <form  style="color:#fff;" action="/nextPage" id="secPage" method="GET">
-      <lable>
+    <form style="color:#fff;" action="/nextPage" id="secPage" method="GET">
+      <label>
         <h3>Are your end user complaining about application slowness? *</h3>
-      </lable>
-      <select style="height: 38px;  width: 122px;" required >
+      </label>
+      <select style="height: 38px;  width: 122px;" required>
         <option value="Frequently" selected>Frequently</option>
         <option value="Sometimes">Sometimes</option>
         <option value="Never">Never</option>
       </select>
       <br>
 
-      <lable>
+      <label>
         <h3>Do you face application downtime in buisness hour? *</h3>
-      </lable>
-      <select style="height: 38px;  width: 122px;" required >
+      </label>
+      <select style="height: 38px;  width: 122px;" required>
         <option value="Frequently" selected>Frequently</option>
         <option value="Sometimes">Sometimes</option>
         <option value="Never">Never</option>
       </select>
       <br>
 
-      <lable>
+      <label>
         <h3>Is your IT infrastructure used optimally? *</h3>
-      </lable>
-      <select style="height: 38px;  width: 122px;" required >
+      </label>
+      <select style="height: 38px;  width: 122px;" required>
         <option value="Partially" selected>Partially</option>
         <option value="Yes">Yes</option>
         <option value="No">No</option>
       </select>
       <br>
 
-      <lable>
+      <label>
         <h3>Do you find difficulty in ROI calculation for future investment due to buisness growth? *</h3>
-      </lable>
-      <select style="height: 38px;  width: 122px;" required >
+      </label>
+      <select style="height: 38px;  width: 122px;" required>
         <option value="Yes" selected>Yes</option>
         <option value="No">No</option>
       </select>
       <br>
 
-      <lable>
-        <h3>Buisness  impacts as per you due to performance issues.</h3>
-      </lable>
+      <label>
+        <h3>Buisness impacts as per you due to performance issues.</h3>
+      </label>
       <br>
       <span class="multiselect">
         <div class="selectBox" onclick="showCheckboxes()">
@@ -108,28 +109,32 @@
             <input type="checkbox" id="two" />Diminished Quality of Service</label>
           <label for="three">
             <input type="checkbox" id="three" />Hindering brand reputation</label>
-    		  <label for="four">
+          <label for="four">
             <input type="checkbox" id="four" />Less visibility in future business growth</label>
-    		  <label for="five">
+          <label for="five">
             <input type="checkbox" id="five" />Inadequate planning for infrastucture sizing and upgradation</label>
-    		  <label for="six">
+          <label for="six">
             <input type="checkbox" id="six" />Low profit mergin</label>
-    		  <label for="seven">
+          <label for="seven">
             <input type="checkbox" id="seven" />Cut off in CoE setup and innovation budget</label>
         </div>
       </span>
 
-      <lable><h3>Average yearly revenue loss as per you due to performance issues.</h3></lable><input type = "text"  id ="name" required><p id="demo" style="color:Red;"></p>
+      <label>
+        <h3>Average yearly revenue loss as per you due to performance issues.</h3>
+      </label><input type="text" id="name" required>
+      <p id="demo" style="color:Red;"></p>
       <br>
       <br>
       <br>
       <br>
 
-	  <center>
-		  <input type="submit" style="margin: 0 auto" value="Next" class="button button2" id="myButton" />
-	  </center>
-	  
+      <center>
+        <input type="submit" style="margin: 0 auto" value="Next" class="button button2" id="myButton" />
+      </center>
+
     </form>
   </div>
 </body>
+
 </html>
