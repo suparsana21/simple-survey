@@ -1,6 +1,6 @@
 <html>
 	<head>
-	  <link rel='stylesheet' type='text/css' href='index.css'>
+	  <link rel='stylesheet' type='text/css' href='css/index.css'>
 	</head>
 <body>
         <div class="danger">
@@ -38,21 +38,23 @@ There is more to performance engineering than just testing. Done right, performa
 </div>
 
 <div>
-  <form> <!-- Need to at action and method attributes when database is name -->
-    Username: 
-    <input type = "text" name = "username" required> <br>
-    Email:
-    <input type = "email" name = "email" required > <br>
-    Organization:
-    <input type = "text" name ="organization" required> <br>
-    Mobile Number (optional)
-    <input type = "tel" name = "mobile"> <br>
-    <button type = "button" value ="Submit">Save</button>
-  </form>
+  <div class="form-container">
+    <form> <!-- Need to at action and method attributes when database is name -->
+      <label for="username">Username:</label> 
+      <input id="username" type="text" name="username" required> <br>
+      <label for="email">Email:</label>
+      <input id="email" type="email" name="email" required > <br>
+      <label for="organization">Organization:</label>
+      <input id="organization" type="text" name="organization" required> <br>
+      <label for="mobile">Mobile Number (optional)</label>
+      <input id="mobile" type="tel" name="mobile"> <br>
+      <button type = "button" value ="Submit">Save</button>
+    </form>
+  </div>
 <center>  
 	<a href="./FirstPage.html">Take the Survey</a> || 
 	<a href="./privacy.html">Read the Privacy Statement</a>
-	</center>
+</center>
 </div>
 </div>
 
