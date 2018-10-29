@@ -11,122 +11,121 @@
   </strong>
 </div>
 
-<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-<script type="text/javascript">
-  function myFunction() {
- // document.getElementById("demo").innerHTML = "Hello World";
- window.location.href="/nextPage" ;
-}
 
-function inputboxValid() {
-    var x, text;
-    x = document.getElementById("name").value;
-    if (x =="") {
-        text = "* Value Required";
-    } 
-    else {
-      text="";
+
+    var expanded = false;
+
+    // checkbox in select item
+    function showCheckboxes() {
+      var checkboxes = document.getElementById("checkboxes");
+      if (!expanded) {
+        checkboxes.style.display = "block";
+        expanded = true;
+      } else {
+        checkboxes.style.display = "none";
+        expanded = false;
+      }
     }
-   document.getElementById("demo").innerHTML = text;
-}
+  </script>
 
-var expanded = false;
 
-// checkbox in select item
-
-function showCheckboxes() {
-  var checkboxes = document.getElementById("checkboxes");
-  if (!expanded) {
-    checkboxes.style.display = "block";
-    expanded = true;
-  } else {
-    checkboxes.style.display = "none";
-    expanded = false;
-  }
-}
-</script>
-
-<div class="header">
-  <div class="left">
+  <div class="header">
+    <div class="left">
       <img src="./image.jpg" alt="logo" />
+    </div>
+    <div class="right_txt">
+      PwC Survey
+    </div>
+    <div class="both">
+    </div>
   </div>
-<div class="right_txt">
-  PwC Survey
-</div>
 
-<div class="both"></div>
-
-</div>
-<div class="center back-color">
-<from  style="color:#fff;"action = "/nextPage" id="secPage" method ="GET">
-
-<lable> <h3>Are your end user complaining about application slowness? </h3></lable>
- <select style="height: 38px;  width: 122px;">
-   <option>Select</option>
-  <option value="Frequently">Frequently</option>
-  <option value="Sometimes">Sometimes</option>
-  <option value="Never">Never</option>
-</select>
-<br>
-
-<lable><h3>Do you face application downtime in buisness hour? </h3> </lable> 
- <select style="height: 38px;  width: 122px;">
-    <option>Select</option>
-  <option value="Frequently">Frequently</option>
-  <option value="Sometimes">Sometimes</option>
-  <option value="Never">Never</option>
-</select>
-<br>
-<lable><h3>Is your IT infrastructure used optimally? </h3> </lable>
- <select style="height: 38px;  width: 122px;">
-    <option>Select</option>
-  <option value="Partially">Partially</option>
-  <option value="Yes">Yes</option>
-  <option value="No">No</option>
-</select>
-<br>
-<lable><h3>Do you find difficulty in ROI calculation for future investment due to buisness  growth? </h3> </lable>
- <select style="height: 38px;  width: 122px;">
-    <option>Select</option>
-<option value="Yes">Yes</option>
-  <option value="No">No</option>
-</select>
-<br>
-<lable><h3>Buisness  impacts as per you due to performance issues. </h3> </lable>
-<br>
-<span class="multiselect">
-    <div class="selectBox" onclick="showCheckboxes()">
-      <select>
-        <option>Select an option</option>
+  <div class="center back-color">
+    <form  style="color:#fff;"action = "/nextPage" id="secPage" method ="GET">
+      <lable> 
+        <h3>Are your end user complaining about application slowness?</h3>
+      </lable>
+      <select style="height: 38px;  width: 122px;">
+        <option>Select</option>
+        <option value="Frequently">Frequently</option>
+        <option value="Sometimes">Sometimes</option>
+        <option value="Never">Never</option>
       </select>
-      <div class="overSelect"></div>
-    </div>
-    <div id="checkboxes">
-      <label for="one">
-        <input type="checkbox" id="one" />Reduction in customer retention</label>
-      <label for="two">
-        <input type="checkbox" id="two" />Diminished Quality of Service</label>
-      <label for="three">
-        <input type="checkbox" id="three" />Hindering brand reputation</label>
-		<label for="four">
-        <input type="checkbox" id="four" />Less visibility in future business growth</label>
-		<label for="five">
-        <input type="checkbox" id="five" />Inadequate planning for infrastucture sizing and upgradation</label>
-		<label for="six">
-        <input type="checkbox" id="six" />Low profit mergin</label>
-		<label for="seven">
-        <input type="checkbox" id="seven" />Cut off in CoE setup and innovation budget</label>
-		
-    </div>
-</span>
-<lable><h3>Average yearly revenue loss as per you due to performance issues.</h3></lable><input type = "text"  id ="name" /><p id="demo" style="color:Red;"></p>
-<br>
-<br>
-<br>
-<br>
-<center><button class="button button2" onclick="inputboxValid()"> Submit </button>   <button class="button button2" onclick="myFunction()"  id="myButton"> Next </button></center>  
+      <br>
 
+      <lable>
+        <h3>Do you face application downtime in buisness hour?</h3> 
+      </lable> 
+      <select style="height: 38px;  width: 122px;">
+        <option>Select</option>
+        <option value="Frequently">Frequently</option>
+        <option value="Sometimes">Sometimes</option>
+        <option value="Never">Never</option>
+      </select>
+      <br>
+            
+      <lable>
+        <h3>Is your IT infrastructure used optimally? </h3>
+      </lable>
+      <select style="height: 38px;  width: 122px;">
+        <option>Select</option>
+        <option value="Partially">Partially</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+      <br>
+            
+      <lable>
+        <h3>Do you find difficulty in ROI calculation for future investment due to buisness growth?</h3> 
+      </lable>
+      <select style="height: 38px;  width: 122px;">
+        <option>Select</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+      <br>
+      
+      <lable>
+        <h3>Buisness  impacts as per you due to performance issues.</h3> 
+      </lable>
+      <br>
+      <span class="multiselect">
+        <div class="selectBox" onclick="showCheckboxes()">
+          <select>
+            <option>Select an option</option>
+          </select>
+          <div class="overSelect">  
+          </div>
+        </div>
+        <div id="checkboxes">
+          <label for="one">
+            <input type="checkbox" id="one" />Reduction in customer retention</label>
+          <label for="two">
+            <input type="checkbox" id="two" />Diminished Quality of Service</label>
+          <label for="three">
+            <input type="checkbox" id="three" />Hindering brand reputation</label>
+    		  <label for="four">
+            <input type="checkbox" id="four" />Less visibility in future business growth</label>
+    		  <label for="five">
+            <input type="checkbox" id="five" />Inadequate planning for infrastucture sizing and upgradation</label>
+    		  <label for="six">
+            <input type="checkbox" id="six" />Low profit mergin</label>
+    		  <label for="seven">
+            <input type="checkbox" id="seven" />Cut off in CoE setup and innovation budget</label>
+        </div>
+      </span>
 
-</from>
-</div>
+      <lable><h3>Average yearly revenue loss as per you due to performance issues.</h3></lable><input type = "text"  id ="name" /><p id="demo" style="color:Red;"></p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <center>
+        <button class="button button2" onclick="inputboxValid()"> Submit </button>   
+        <button class="button button2" onclick="myFunction()"  id="myButton"> Next </button>
+      </center>  
+    </form>
+  </div>
+</body>
 </html>
+
