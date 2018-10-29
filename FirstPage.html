@@ -12,6 +12,12 @@
 </div>
 
 
+  <!-- scripts -->
+  <script type="text/javascript">
+    function movetoNext() {
+      // document.getElementById("demo").innerHTML = "Hello World";
+       window.location.href="/nextPage" ;
+    }
 
     var expanded = false;
 
@@ -115,14 +121,13 @@
         </div>
       </span>
 
-      <lable><h3>Average yearly revenue loss as per you due to performance issues.</h3></lable><input type = "text"  id ="name" /><p id="demo" style="color:Red;"></p>
+      <lable><h3>Average yearly revenue loss as per you due to performance issues.</h3></lable><input type = "text"  id ="name" required><p id="demo" style="color:Red;"></p>
       <br>
       <br>
       <br>
       <br>
-      <center>
-        <button class="button button2" onclick="inputboxValid()"> Submit </button>   
-        <button class="button button2" onclick="myFunction()"  id="myButton"> Next </button>
+      <center>  
+        <button class="button button2" onclick="movetoNext()" id="myButton">Next</button>
       </center>  
     </form>
   </div>
