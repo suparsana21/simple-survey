@@ -1,143 +1,161 @@
 <html>
-        <head>
-         <meta name="viewport" content="width=device-width, initial-scale=1">
-         <link type="text/css" rel="stylesheet" href="./css/index.css" />
-        </head>
-        <body>
-                <div class="danger">
-                        <p><strong></strong> </p>
-                </div>
-                      <div class="danger">
-                        <strong>
-                        </strong>
-                      </div>
-                      <div class="header">
-                        <div class="left">
-                            <img src="./image.jpg" alt="logo" />
-                        </div>
-                      <div class="right_txt">
-                        PwC Survey 
-                      </div>
-                      
-                      <div class="both"></div>
-                      
-                      </div>
-                      <div class="center back-color">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link type="text/css" rel="stylesheet" href="./css/index.css" />
+</head>
+
+<body>
+  <div class="danger">
+    <p><strong></strong> </p>
+  </div>
+  <div class="danger">
+    <strong>
+    </strong>
+  </div>
+  <div class="header">
+    <div class="left">
+      <img src="./image.jpg" alt="logo" />
+    </div>
+    <div class="right_txt">
+      PwC Survey
+    </div>
+
+    <div class="both"></div>
+
+  </div>
+  <div class="center back-color">
+    <br>
+    <div class="center">
+      <h4>Choose our performance re-enginnering solution which ever applicable for you</h4>
+      <form action="/lastPage" id="secPage" method="GET">
+        <h1> What is your technology landscape? </h1>
+
+        <h3>Customized J2EE stack deployed on Java EE application server with Oracle database backend</h3>
         <br>
-<div class="center">
-<h4>Choose our performance re-enginnering solution which ever applicable for you</h4>
-<form action = "/lastPage" style="color:#fff"; id="secPage" method ="GET">
-<lable><h1>   What is your technology landscape? </h1></lable>
+        <input type="checkbox" name="check1" value="auto"><span>Profiling using J2EE diagonistic tools (Jconsole/JRMC/Visual
+          VM)
+        </span><br>
 
-<h3>Customized J2EE stack deployed on Java EE application server with Oracle database backend</h3>
-<br>
-1.<input type="checkbox" name="check1" value="auto">Profiling using J2EE diagonistic tools (Jconsole/JRMC/Visual VM)<br>
+        <input type="checkbox" name="check2" value="auto"><span>Tuning of Java EE application servers (weblogic/Jboss/jboss)</span><br>
 
-2.<input type="checkbox" name="check2" value="auto">Tuning of Java EE application servers (weblogic/Jboss/jboss)<br>
+        <input type="checkbox" name="check3" value="auto"><span> Heap and thread dump analysis to detect the memory bottleneck</span><br>
 
-3.<input type="checkbox" name="check3" value="auto"> Heap and thread dump analysis to detect the memory bottleneck<br>
+        <input type="checkbox" name="check4" value="auto"><span>JVM tuning in terms of heap sizing and Garbage collection
+          mechanism
+        </span><br>
 
-4.<input type="checkbox" name="check4" value="auto">JVM tuning in terms of heap sizing and Garbage collection mechanism<br>
+        <input type="checkbox" name="check5" value="auto"><span>Oracle database AWR report analysis and tuing</span><br>
 
-5.<input type="checkbox" name="check5" value="auto">Oracle database AWR report analysis and tuing<br>
+        <input type="checkbox" name="check6" value="auto"><span>Monitoring of logs, application performace,Infrastructure
+          (OS/network/databse) and user experience</span>
 
-6.<input type="checkbox" name="check6" value="auto">Monitoring of logs, application performace,Infrastructure (OS/network/databse) and user experience
+        <br>
+        <br>
+        <br>
 
-<br>
-<br>
-<br>
+        <h3>Customized .net stack over windows IIS Server with backend MS SQL Server Database </span></h3>
+        <br>
+        <br>
+        <input type="checkbox" name="check1" value="auto"><span>Shrink and compression of files,images,stylesheets</span><br>
 
-<lable><h3>Customized .net stack over windows IIS Server with backend MS SQL Server Database </h3></lable
-<br>
-<br>
-1.<input type="checkbox" name="check1" value="auto">Shrink and compression of files,images,stylesheets<br>
+        <input type="checkbox" name="check2" value="auto"><span>In-memory caching</span><br>
 
-2.<input type="checkbox" name="check2" value="auto">In-memory caching<br>
+        <input type="checkbox" name="check3" value="auto"><span>Leverage server-side redirects instead of client side</span><br>
 
-3.<input type="checkbox" name="check3" value="auto">Leverage server-side redirects instead of client side<br> 
+        <input type="checkbox" name="check4" value="auto"><span>Use of Microsoft SQL profiler to capture costly execution
+          plan
+        </span><br>
 
-4.<input type="checkbox" name="check4" value="auto">Use of Microsoft SQL profiler to capture costly execution plan<br>
+        <input type="checkbox" name="check5" value="auto"><span>Windows server tuning for .net application pools</span><br>
 
-5.<input type="checkbox" name="check5" value="auto">Windows server tuning for .net application pools<br>
+        <input type="checkbox" name="check6" value="auto"><span> Monitoring of logs, application performace,Infrastructure
+          (OS/network/databse) and user experience</span><br>
 
-6.<input type="checkbox" name="check6" value="auto"> Monitoring of logs, application performace,Infrastructure (OS/network/databse) and user experience<br>
+        <br>
 
-<br>
-<br>
-<br>
+        <h3>SAP ABAP or BASIS </h3>
 
-<lable><h3>SAP ABAP or BASIS </h3></lable
-<br>
-<br>
-1.<input type="checkbox" name="check1" value="auto">T-Code monitoring to capture various SAP related performance metrics such as Work Process status, Memory Usage , OS CPU utilization data, SQL trace, ABAP server dump, SAP Lock details, user login sessions, work load and batch job monitoring details, database performance and business transaction analysis for response time breakdown
-<br>
-<br>
-2.<input type="checkbox" name="check2" value="auto">Tuning of SAP buffer parameters in ABAP system<br>
-<br>
-3.<input type="checkbox" name="check3" value="auto">Optimize R3 parameters for basis systems
-<br>
-<br>
+        <br>
+        <input type="checkbox" name="check1" value="auto"><span>T-Code monitoring to capture various SAP related performance
+          metrics such as Work Process status, Memory Usage , OS CPU utilization data, SQL trace, ABAP server dump, SAP Lock
+          details, user login sessions, work load and batch job monitoring details, database performance and business transaction
+          analysis for response time breakdown</span>
+        <br>
+        <br>
+        <input type="checkbox" name="check2" value="auto"><span>Tuning of SAP buffer parameters in ABAP system</span><br>
+        <br>
+        <input type="checkbox" name="check3" value="auto"><span>Optimize R3 parameters for basis systems</span>
+        <br>
+        <br>
 
-<lable><h3>Business Intelligence (BI) Systems </h3><lable>
-<br>
-<br>
-1.<input type="checkbox" name="check1" value="auto">Data-model and SQL optimisation<br>
-<br>
-2.<input type="checkbox" name="check2 value="auto">BI Server caching<br>
-<br>
-3.<input type="checkbox" name="check3 value="auto">Parallel Query Processing to increase the execution speed<br>
-<br>
-4.<input type="checkbox" name="check4 value="auto">Increase ETL efficiency<br>
-<br>
-5.<input type="checkbox" name="check5 value="auto">Resource utilization tracking of BI Servers<br>
-<br>
-6.<input type="checkbox" name="check6" value="auto"> Using of materialized views <br>
-<br>
-<br>
+        <h3>Business Intelligence (BI) Systems </h3>
 
-<lable><h3>IoS or Android mobile application</h3><lable>
-<br>
-<br>
-1.<input type="checkbox" name="check1" value="auto">Optimize individual screens, flows and other UI resources will greatly help reduce loading times.<br>
+        <input type="checkbox" name="check1" value="auto"><span>Data-model and SQL optimisation</span><br>
+        <br>
+        <input type="checkbox" name="check2" value="auto"><span>BI Server caching</span><br>
+        <br>
+        <input type="checkbox" name="check3" value="auto"><span>Parallel Query Processing to increase the execution speed
+        </span><br>
+        <br>
+        <input type="checkbox" name="check4" value="auto"><span>Increase ETL efficiency</span><br>
+        <br>
+        <input type="checkbox" name="check5" value="auto"><span>Resource utilization tracking of BI Servers</span><br>
+        <br <input type="checkbox" name="check6" value="auto"><span> Using of materialized views</span> <br>
+        <br>
+        <br>
 
-2.<input type="checkbox" name="check2" value="auto"> Review API Performance and SDK Integration<br>
+        <h3>IoS or Android mobile application</h3>
 
-3.<input type="checkbox" name="check3" value="auto">Usage of tools to monitor and profile crashes to improve long-term app performance and user retention<br>
+        <input type="checkbox" name="check1" value="auto"><span>Optimize individual screens, flows and other UI resources
+          will greatly help reduce loading times.</span><br>
 
-4.<input type="checkbox" name="check4" value="auto"> Assessment of processing capabilities, storage capacity, battery, screen resolutions for cross device<br>
-<br>
-<br>
+        <input type="checkbox" name="check2" value="auto"><span> Review API Performance and SDK Integration<br>
 
-<lable><h3> LAMP stack </h3><lable>
-<br>
-1.<input type="checkbox" name="check1" value="auto">Linux Kernel parameter optimization<br>
+          <input type="checkbox" name="check3" value="auto"><span>Usage of tools to monitor and profile crashes to improve
+            long-term app performance and user retention</span><br>
 
-2.<input type="checkbox" name="check2" value="auto">Execution of customized mySqlTuner script <br>
-
-3.<input type="checkbox" name="check3" value="auto">Tuning of apche pre-fork MPM module <br>
-
-4.<input type="checkbox" name="check4" value="auto">Improve the performance of Python programs <br>
-
-5.<input type="checkbox" name="check5" value="auto">Monitoring of logs, application performace,Infrastructure (OS/network),User experience
- <br>
- <br>
+          <input type="checkbox" name="check4" value="auto"><span> Assessment of processing capabilities, storage capacity,
+            battery, screen resolutions for cross device</span><br>
+          <br>
+          <br>
 
 
-<br>
-<br>
+          <h3> LAMP stack </h3>
 
-<h4>Choose our solution for infrastructure monitoring and performance optimization</h4>
+          <br>
+          <input type="checkbox" name="check1" value="auto"><span>Linux Kernel parameter optimization</span><br>
 
-<h3>Please select which is applicable for your enterpise </h3>
-1. <input type="checkbox" name="check1" value="auto"> Auto-discovery of your entire technology stack in under 5 minutes<br>
-2. <input type="checkbox" name="check2" value="process"> Process-specific network metrics to ensure high-quality process communications over networks<br>
-3. <input type="checkbox" name="check3" value="providing"> Providing a real-time view of all the connections between containerized processes, hosts, and cloud instances<br>
-4. <input type="checkbox" name="check4" value="directly"> Directly access log lines pointing to the root cause of system health issues<br>
-5. <input type="checkbox" name="check5" value="rot">Root-cause analysis in your infrastructure and virtualization layers<br>
+          <input type="checkbox" name="check2" value="auto"><span>Execution of customized mySqlTuner script</span>
+          <br>
+
+          <input type="checkbox" name="check3" value="auto"><span>Tuning of apche pre-fork MPM module</span>
+          <br>
+
+          <input type="checkbox" name="check4" value="auto"><span>Improve the performance of Python programs
+          </span><br>
+
+          <input type="checkbox" name="check5" value="auto"><span>Monitoring of logs, application performace,Infrastructure
+            (OS/network),User experience</span>
+          <br>
 
 
-</div>
-<center><button class="button button2" id="submitClick"> Submit </center></button>
-</form>
+          <h4>Choose our solution for infrastructure monitoring and performance optimization</h4>
+
+          <h3>Please select which is applicable for your enterpise </h3>
+          <input type="checkbox" name="check1" value="auto"><span> Auto-discovery of your entire technology stack in under
+            5 minutes</span><br> <input type="checkbox" name="check2" value="process"><span>
+            Process-specific network metrics to ensure high-quality process communications over networks</span><br>
+          <input type="checkbox" name="check3" value="providing"><span> Providing a real-time view of all the connections
+            between containerized processes, hosts, and cloud instances</span><br> <input type="checkbox" name="check4" value="directly"><span>
+            Directly access log lines pointing to the root cause of system health issues</span><br> <input type="checkbox"
+            name="check5" value="rot"><span>Root-cause analysis in your infrastructure and virtualization layers
+          </span><br>
+
+
+    </div>
+    <center><button class="button button2" id="submitClick"> Submit </center></button>
+    </form>
 </body>
+
 </html>
