@@ -114,6 +114,16 @@
                       cursor: pointer;
                   }
 
+                  
+                  input[type=text] {
+                      width: 18%;
+                      padding: 12px 20px;
+                      margin: 10px 3px;
+                      box-sizing: border-box;
+                  }
+
+
+
                   p {
                     display: block;
                       margin-block-start: -4em;
