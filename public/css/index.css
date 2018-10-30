@@ -89,6 +89,14 @@
                       margin: 10px 3px;
                       box-sizing: border-box;
                   }
+
+                  input[type=text].form-control {
+                    /* match with other bootstrap input.form-control elements*/
+                      width: 100%;
+                      padding: 6px 12px;
+                      margin: 0;
+                  }
+
                   p {
                     display: block;
                       margin-block-start: -4em;
